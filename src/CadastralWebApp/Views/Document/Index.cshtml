@@ -1,0 +1,24 @@
+﻿@model DocumentListVm
+@{
+    ViewData["Title"] = "Documents table";
+}
+
+<h3>Documents table</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var document in Model.Documents)
+        {
+            <tr>
+                <td>@document.Id</td>
+                <td>@document.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+﻿global using System.Reflection;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.EntityFrameworkCore;
+global using CadastralApplication.Common.Behaviors;
+global using MediatR;
+global using FluentValidation;
+global using Serilog;
+global using AutoMapper;
+global using AutoMapper.QueryableExtensions;
+global using CadastralDomain;
+global using CadastralApplication.Interfaces;
+global using CadastralApplication.Common.Mappings;
+global using CadastralApplication.Common.Exceptions;
+global using CadastralApplication.Common.Behaviors;
