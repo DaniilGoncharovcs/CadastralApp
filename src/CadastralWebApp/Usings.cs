@@ -21,4 +21,5 @@ global using CadastralApplication.Documents.Queries.GetDocumentList;
 global using CadastralPersistence;
 global using CadastralWebApp.Extensions;
 global using CadastralWebApp.Middleware;
+global using CadastralWebApp.DTO;
 global using CadastralWebApp.Services;

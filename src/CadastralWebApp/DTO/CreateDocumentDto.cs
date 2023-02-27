@@ -1,4 +1,5 @@
-﻿public class CreateDocumentDto : IMapWith<CreateDocumentCommand>
+﻿namespace CadastralWebApp.DTO;
+public class CreateDocumentDto : IMapWith<CreateDocumentCommand>
 {
     [Required]
     public string Name { get; set; }

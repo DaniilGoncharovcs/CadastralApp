@@ -26,7 +26,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddIdentityServices();
 builder.Services.AddSwagger();
 
-builder.Services.AddHttpClient();
+var baseUrl = new Uri("https://localhost:7038");
+
+builder.Services.AddHttpClients(baseUrl);
 
 var app = builder.Build();
 

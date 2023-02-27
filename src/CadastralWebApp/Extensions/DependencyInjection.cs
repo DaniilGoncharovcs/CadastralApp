@@ -34,4 +34,14 @@ public static class DependencyInjection
 
         return services;
     }
+
+    public static IServiceCollection AddHttpClients(this IServiceCollection services, Uri baseAddress)
+    {
+        services.AddHttpClient<IDocumentService, DocumentService>(client =>
+        {
+            client.BaseAddress = baseAddress;
+        });
+
+        return services;
+    }
 }
